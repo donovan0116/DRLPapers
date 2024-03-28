@@ -12,6 +12,7 @@
 > 2. 不由人类指导，完全AI内部自行博弈，如魔改架构（COPA），相互博弈等。
 > 3. 人类在训练过程不参与指导，但是在执行过程AI需要理解人类的指令。该过程可以与LLM相结合
 
-8. 
+8. 人大高瓴，LLM-based HAC，motivation：提出一种基于LLM的与人类进行协作的智能体，并且该智能体能够判断什么时候该让人类介入。人类把握大方向，agent实现子领域。
+8. 清华，zero-shot cooperation assume human bias。motivation：已有的zero-shot不需要人类数据就能训练出MARL的agent，但是这种训练只是根据环境reward建模，人类的偏好和环境的reward model不一致。本文借助人类偏见（bias），生成一个有效的策略池。（之前为了防止self-play进入过拟合，多个智能体一起训练形成一个策略池，然后智能体针对策略池自适应调整，预防进入次优）方法：在第一阶段构造策略池时就将隐藏的人类回报放入。
 
 open speil google football
