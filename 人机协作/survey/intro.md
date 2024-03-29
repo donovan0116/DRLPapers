@@ -14,5 +14,9 @@
 
 8. 人大高瓴，LLM-based HAC，motivation：提出一种基于LLM的与人类进行协作的智能体，并且该智能体能够判断什么时候该让人类介入。人类把握大方向，agent实现子领域。
 8. 清华，zero-shot cooperation assume human bias。motivation：已有的zero-shot不需要人类数据就能训练出MARL的agent，但是这种训练只是根据环境reward建模，人类的偏好和环境的reward model不一致。本文借助人类偏见（bias），生成一个有效的策略池。（之前为了防止self-play进入过拟合，多个智能体一起训练形成一个策略池，然后智能体针对策略池自适应调整，预防进入次优）方法：在第一阶段构造策略池时就将隐藏的人类回报放入。
+8. US Army，测量MARL系统中多智能体协作的质量。方法：提出一种指标CCM，将智能体的一段行为视为时间序列，然后embedding。embedding之间的影响就是多智能体协作质量的指标。
+8. MIT，motivation：研发一个框架，将人类和ai的行为对齐，有助于生成式ai的发展。方法：放弃使用传统的state和action，而是使用更高级的task、行为流形behavioral manifold。通过完成task、比较人机行为来对齐。本质上还是训练期就人机交互。
+8. 弗吉尼亚大学，开发对MARL的解释性框架，让人类理解MARL系统的策略。方法：将策略罗列出来；根据人类的自然语言问询来过滤出人类想查询的具体策略，并给出。
+8. 
 
 open speil google football
