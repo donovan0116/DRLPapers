@@ -1,0 +1,1 @@
+1. 2024年9月 匹兹堡大学+本田 智能体在类IC3Net网络中学会使用自然语言通信。方法：在训练智能体通信时，同步使用LLM Agent。LLM输入环境的obs，输出可能的action和自然语言的communication c，形成（o，a，c）的数据集。当智能体学会IC3Net的通信后，智能体的RL loss在原始的基础上增加agent的message和数据集message的差距一项，使得智能体发出的通信接近人类语言，进而使用自然语言通信。
